@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE57F">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineverleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineverright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinehorgifbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinetvtop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinegifhortop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <TextView
+        android:id="@+id/textletter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFE57F"
+        android:clickable="true"
+        android:fontFamily="@font/artifika"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textAllCaps="true"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="200sp"
+        android:textStyle="bold|italic"
+        android:text="@string/happy_learning"
+        app:layout_constraintBottom_toTopOf="@+id/guidelinehorgifbottom"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineverright"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineverleft"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonhome"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+        android:id="@+id/textletterdtl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFE57F"
+        android:clickable="true"
+        android:fontFamily="@font/artifika"
+        android:gravity="center"
+        android:text="@string/happy_learning"
+        android:textAlignment="gravity"
+        android:textAllCaps="true"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="50sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/guidelinetvtop"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineverright"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineverleft"
+        app:layout_constraintTop_toBottomOf="@id/guidelinehorgifbottom"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButtonhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#53CA11"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/gifImageView"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineverright"
+        app:layout_constraintStart_toStartOf="@+id/guidelineverleft"
+        app:layout_constraintTop_toTopOf="@+id/guidelinegifhortop"
+        app:srcCompat="@drawable/myimages3_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
